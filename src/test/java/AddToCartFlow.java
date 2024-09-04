@@ -9,6 +9,8 @@ public class AddToCartFlow extends BaseTest {
         login.loginFlow();
         AddToCartPageObjects cart = new AddToCartPageObjects(driver);
         cart.AddToCart();
+        System.out.println(cart.ProductNameInCart.getText());
+        System.out.println(cart.QuantityInCart.getText());
     }
 }
 
